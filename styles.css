@@ -1,0 +1,69 @@
+body {
+  background-color: burlywood;
+  margin: 0;
+}
+
+button {
+  background-color: bisque;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+}
+button img{
+  width: 20px;
+  height: 20px;
+}
+
+h2 {
+  background-color: antiquewhite;
+  border-radius: 15px;
+  text-align: right;
+  padding-right: 30px;
+  margin: 0 0 8px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#wrap {
+  display: flex;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+#history {
+  background-color: beige;
+  width: 300px;
+  height: 100%;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  gap: 8px;
+  padding: 8px;
+  flex: 1;               /* take full remaining space */
+  justify-content: end;  /* keep buttons on the right */
+}
+
+/* Display bar */
+#text {
+  grid-column: 1 / -1; /* span full width */
+  width: 100%;
+}
+
+/* Equal button */
+#equal {
+  grid-column: 5;
+  grid-row: 4 / span 2;
+  height: auto;
+  background-color: grey;
+}
+
+#reset {
+  grid-column: span 4; /* span entire row */
+  width: 100%;
+  background-color: rgb(209, 188, 161);
+}
+#del {
+  background-color: firebrick;
+}
